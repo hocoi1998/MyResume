@@ -1,0 +1,286 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+footer {
+	margin-top: 20px !important;
+	height: 84px;
+	line-height: 84px;
+	text-align: center;
+	background-color: #f3f3f3;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+a {
+	text-decoration: none;
+}
+
+p a:visited {
+	color: #212529;
+}
+a:hover {
+	color: #92DD03;
+}
+.menu {
+    background-color: #f3f3f3;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.menu ul {
+	padding: 0px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+  	list-style-type: none;
+  	overflow: hidden;
+}
+.menu ul li {
+ 	float: left;
+}
+.menu ul li a {
+	color: #212529;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+.menu a.active {
+	color: #92DD03;
+}
+.container {
+	margin-top: 116px;
+   	max-width: 1040px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.home {
+	display: flex;  
+	padding-bottom: 20px;
+	justify-content: center;
+ 	align-items: center;
+	height: 530px;
+	background-image: url('../images/1.jpg');
+	background-repeat: no-repeat;
+	transition: 1s;
+	margin-bottom: 35px;
+}
+.avt {
+	margin-top: 130px;
+}
+.home img {
+
+	max-width: 150px;
+	max-height: 150px;
+	border-radius: 50%;
+}
+.about {
+	margin-top: 35px;
+	width: 100%;
+
+}
+.about h1, .skills h1, .education h1, .contact h1 {
+	text-align: center;
+	color: #92DD03;
+	padding-top: 80px;
+}
+.info {
+	display: flex;
+	margin: 25px;
+	padding: 10px 30px;
+	border: 1px solid #ddd;
+
+}
+.info .info1 {
+	margin: 30px 0px;
+	padding-left: 20px;
+	min-width: 41%;
+	border-right: 10px solid gold;
+}
+.info .info1 p {
+
+	font-style: italic;
+	font-weight: 700;
+}
+.info .info2{
+	padding: 0px 10px 0px 55px;
+	font-size: 125%;
+}
+.skills {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 45px;
+}
+.skills .chart {
+	width: 85%;
+	margin: 0px auto;
+}
+.skills .chart div {
+	color: #fff;
+	text-align: right;
+	padding-right: 5px;
+}
+.html {
+	width: 90%; 
+	background-color: #E54C21;
+}
+.css {
+	width: 80%; 
+	background-color: #264DE4;
+}
+.js {
+	width: 65%;
+	background-color: #E7C62F;
+}
+.pts {
+	width: 50%;
+	background-color: #001D26;
+}
+.row {
+	display: flex;
+}
+.edu {
+	width: 33.3333333333%;
+	padding: 0px 32px;
+	text-align: center;
+}
+.location {
+	width: 35%;
+}
+.location .box {
+	border-radius: 5px;
+	margin: 15px;
+	padding: 10px;
+	display: flex;
+	border: 1px solid #ddd;
+}
+.location .box img {
+	width: 23px;
+	height: 23px;
+	margin: 13px;
+}
+.form {
+	width: 65%;
+	display: flex;
+}
+.form form {
+	margin: 15px;
+}
+.form form input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.form form input[name=mess] {
+	height: 128px;
+}
+.form form input[type=submit] {
+	width: 100%;
+	height: 41px;
+	border: none;
+	border-radius: 5px;
+	background-color: #92DD03;
+	color: #fff;
+	font-weight: bold;
+	font-size: 110%;
+}
+.form form input[type=submit]:hover {
+	background-color: #85C01A;
+}
+.contact {
+	padding-bottom: 80px;
+}
+
+	/* Tablet */
+	@media only screen and (max-width:800px) {
+	
+		
+		.menu ul {
+			width: 450px;
+		}
+		.menu ul li a {
+		    padding: 5px 10px;
+		}
+		.info{
+			display: block;
+		}
+		.info .info1{
+			min-width: 100%;
+			border: none;
+		}
+		.info .info2{
+			min-width: 100%;
+			padding-left: 20px;
+		}
+		.contact .row {
+			display: block;
+		}
+		.location {
+			width: 100%;
+		}
+		.location .box {
+			width: 45%;
+			float: left;
+		}
+		.form {
+			width: 100%;
+			display: flex;
+		}
+	
+	/* moblie */
+	@media only screen and (max-width:500px) {
+		.menu ul {
+			width: 300px;
+			font-size: 0.6rem;
+		}
+		.menu ul li a {
+		    padding: 5px 10px;
+		}
+		.info{
+			display: block;
+		}
+		.info .info1{
+			min-width: 100%;
+			border: none;
+		}
+		.info .info2{
+			min-width: 100%;
+			padding-left: 20px;
+		}
+		.row {
+			display: block;
+		}
+		.edu {
+			width: 100%;
+		}
+		.location {
+			width: 100%;
+		}
+		.location .box {
+			width: 91%;
+			float: left;
+		}
+		.form {
+			width: 100%;
+			display: flex;
+		}
+	}
